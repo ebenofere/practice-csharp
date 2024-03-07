@@ -1,18 +1,20 @@
-﻿// C# program to accept a number from the user and display it if it is positive
+﻿// C# program to find greatest among 2 numbers 
 
-Console.WriteLine("Enter a number : ");
-int enteredNumber = Convert.ToInt32(Console.ReadLine());
-
-if (enteredNumber > 0)
+int a, b;
+Console.WriteLine("Enter the first number : ");
+a = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Enter the second number : ");
+b = Convert.ToInt32(Console.ReadLine());
+if (a > b)
 {
-    Console.WriteLine("The entered number is positive");
+    Console.WriteLine("a is greater than b");
 }
-else if (enteredNumber == 0)
+else if (a == b)
 {
-    Console.WriteLine("The entered number is zero");
+    Console.WriteLine("a is equal to b");
 }
 else
 {
-    Console.WriteLine("The enteredd number is negative");
+    Console.WriteLine("b is greater than a");
 }
 Console.ReadLine();
