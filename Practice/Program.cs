@@ -1,13 +1,17 @@
-﻿// C# program to generate sequence of numbers within a range - get the even number and the squared numbers
+﻿// C# program to accept a number from the user and display it if it is positive
 
-int[] numberList = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 };
-var evenArray = numberList.Where(x => x % 2 == 0);
-var squaredArray = numberList.Select(x => x * x);
-//foreach(int item in evenArray)
-//{
-//    Console.WriteLine(item);
-//}
-foreach (int item in squaredArray)
+Console.WriteLine("Enter a number : ");
+int enteredNumber = Convert.ToInt32(Console.Read());
+
+if (enteredNumber > 0)
 {
-    Console.WriteLine(item);
+    Console.WriteLine("The entered number is positive");
+}
+else if (enteredNumber == 0)
+{
+    Console.WriteLine("The entered number is zero");
+}
+else
+{
+    Console.WriteLine("The enteredd number is negative");
 }
