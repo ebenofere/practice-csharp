@@ -1,11 +1,12 @@
-﻿// C# program to swap two numbers
-
-int a, b, temp;
-Console.WriteLine("Enter the first number");
-a = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Enter the second number");
-b = Convert.ToInt32(Console.ReadLine());
-temp = a;
-a = b;
-b = temp;
-Console.WriteLine($"after the swap, a is {a} and b is {b}");
+﻿// C# program to find whether the number is divisible by 2
+int n;
+Console.WriteLine("Enter the number");
+n = Convert.ToInt32(Console.Read());
+if (n % 2 == 0)
+{
+    Console.WriteLine("The number entered is divisible by 2");
+}
+else
+{
+    Console.WriteLine("The number entered is not divisible by 2");
+}
