@@ -1,13 +1,17 @@
-﻿// C# program to find whether the number is divisible by 2
-int n;
-Console.WriteLine("Enter the number");
-n = Convert.ToInt32(Console.Read());
-if (n % 2 == 0)
+﻿//C# Program to Check whether the Entered Number is Even or Odd
+
+int i;
+Console.Write("Enter a number : ");
+i = int.Parse(Console.ReadLine());
+if (i % 2 == 0)
 {
-    Console.WriteLine("The number entered is divisible by 2");
+    Console.Write("the entered number is an even number");
+    Console.Read();
 }
 else
 {
-    Console.WriteLine("The number entered is not divisible by 2");
+    Console.Write("the entered number is an odd number");
+    Console.Read();
 }
+
 
