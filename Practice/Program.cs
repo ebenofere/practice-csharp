@@ -1,17 +1,15 @@
-﻿//C# Program to Check whether the Entered Number is Even or Odd
+﻿// C# program to check whether the entered number is even or odd
 
 int i;
-Console.Write("Enter a number : ");
+Console.WriteLine("Enter a number : ");
 i = int.Parse(Console.ReadLine());
 if (i % 2 == 0)
 {
-    Console.Write("the entered number is an even number");
+    Console.WriteLine("the entered number is an even number");
     Console.Read();
 }
 else
 {
-    Console.Write("the entered number is an odd number");
+    Console.WriteLine("the entered number is an odd number");
     Console.Read();
 }
-
-
