@@ -1,19 +1,14 @@
-﻿// C# program to find greatest among 2 numbers
-int a, b;
-Console.WriteLine("Enter the first number : ");
-a = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Enter the second number : ");
-b = Convert.ToInt32(Console.ReadLine());
+﻿// C# program to swap two numbers 
+int num1, num2, temp;
+Console.WriteLine("enter the first number");
+num1 = int.Parse(Console.ReadLine());
+Console.WriteLine("enter the second number");
+num2 = int.Parse(Console.ReadLine());
 
-if (a > b)
-{
-    Console.WriteLine("a is greater than b");
-}
-else if (a == b)
-{
-    Console.WriteLine("both are equal");
-}
-else
-{
-    Console.WriteLine("b is greater than a");
-}
+temp = num1;
+num1 = num2;
+num2 = temp;
+
+Console.WriteLine($"\nFirst number: {num1}");
+Console.WriteLine($"\nSecond number: {num2}");
+Console.Read();
