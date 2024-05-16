@@ -1,9 +1,6 @@
-﻿// This is a C# program to generate odd numbers within a range
-
-IEnumerable<int> oddNums = Enumerable.Range(1, 51).Where(x => x % 2 != 0);
-
-foreach (int n in oddNums)
+﻿// This is a C# program to generate sequence of numbers within a range
+IEnumerable<int> GenerateNumber = new List<int> { 1, 2, 3, 5, 3, 2, 7, 8 };
+foreach (int n in GenerateNumber)
 {
-    Console.WriteLine($"odd numbers: {n}");
+    Console.WriteLine(n);
 }
-Console.ReadLine();
