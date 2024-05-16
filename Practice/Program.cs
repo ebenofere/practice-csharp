@@ -1,18 +1,19 @@
-﻿// this is a c# program to generate sequence of numbers within a range - get  the even number and then the squared numbers too
+﻿// C# program to find greatest among 2 numbers
+int a, b;
+Console.WriteLine("Enter the first number : ");
+a = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Enter the second number : ");
+b = Convert.ToInt32(Console.ReadLine());
 
-int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-
-// examples of using Enumerable extension methods
-
-var evenNumbers = numbers.Where(n => n % 2 == 0);
-var squaredNumbers = numbers.Select(x => x * x);
-
-foreach (var item in evenNumbers)
+if (a > b)
 {
-    Console.WriteLine(item);
+    Console.WriteLine("a is greater than b");
 }
-
-foreach (var item in squaredNumbers)
+else if (a == b)
 {
-    Console.WriteLine(item);
+    Console.WriteLine("both are equal");
+}
+else
+{
+    Console.WriteLine("b is greater than a");
 }
