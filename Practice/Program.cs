@@ -1,15 +1,7 @@
-﻿// C# Program to check whether the entered number is even or odd
-
-int i;
-Console.WriteLine("enter a number : ");
-i = int.Parse(Console.ReadLine());
-if (i % 2 == 0)
+﻿// this is a c# program to generate odd numbers within a range
+IEnumerable<int> oddNums = Enumerable.Range(1, 100).Where(x => x % 2 != 0);
+foreach (int items in oddNums)
 {
-    Console.WriteLine("the entered number is an even number");
-    Console.Read();
+    Console.WriteLine(items);
 }
-else
-{
-    Console.WriteLine("the entered number is an odd number");
-    Console.Read();
-}
+Console.ReadLine();
