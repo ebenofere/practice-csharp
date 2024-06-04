@@ -1,14 +1,15 @@
-﻿// C# program to swap two numbers 
-int num1, num2, temp;
-Console.WriteLine("enter the first number");
-num1 = int.Parse(Console.ReadLine());
-Console.WriteLine("enter the second number");
-num2 = int.Parse(Console.ReadLine());
+﻿// C# Program to check whether the entered number is even or odd
 
-temp = num1;
-num1 = num2;
-num2 = temp;
-
-Console.WriteLine($"\nFirst number: {num1}");
-Console.WriteLine($"\nSecond number: {num2}");
-Console.Read();
+int i;
+Console.WriteLine("enter a number : ");
+i = int.Parse(Console.ReadLine());
+if (i % 2 == 0)
+{
+    Console.WriteLine("the entered number is an even number");
+    Console.Read();
+}
+else
+{
+    Console.WriteLine("the entered number is an odd number");
+    Console.Read();
+}
