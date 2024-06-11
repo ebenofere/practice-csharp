@@ -1,23 +1,15 @@
-﻿//C# Program to Find Sum of Digits of a Number using Recursion
-int num, result;
-Pro pg = new Pro();
-Console.WriteLine("Enter the number : ");
-num = int.Parse(Console.ReadLine());
-result = pg.sum(num);
-Console.WriteLine($"The sum of digits in {num} is {result}");
-Console.ReadLine();
+﻿//C# Program to Get a Number and Display the Number with its Reverse
 
-public class Pro
+int num, reverse = 0;
+Console.WriteLine("enter the number : ");
+num = int.Parse(Console.ReadLine());
+
+while (num != 0)
 {
-    public int sum(int num)
-    {
-        if (num != 0)
-        {
-            return (num % 10 + sum(num / 10));
-        }
-        else
-        {
-            return 0;
-        }
-    }
+    reverse = reverse * 10;
+    reverse = reverse + (num % 10);
+    num /= 10;
 }
+
+Console.WriteLine($"the reverse of the entered number is {reverse}");
+Console.ReadLine();
