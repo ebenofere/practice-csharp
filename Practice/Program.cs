@@ -1,14 +1,23 @@
-﻿// C# program to get a sum and display the sum of the digits
-
-int num, r, Sum = 0;
-Console.WriteLine("Enter a number :");
+﻿//C# Program to Find Sum of Digits of a Number using Recursion
+int num, result;
+Pro pg = new Pro();
+Console.WriteLine("Enter the number : ");
 num = int.Parse(Console.ReadLine());
+result = pg.sum(num);
+Console.WriteLine($"The sum of digits in {num} is {result}");
+Console.ReadLine();
 
-while (num != 0)
+public class Pro
 {
-    r = num % 10;
-    num = num / 10; // integers don't have decimals
-    Sum += r;
+    public int sum(int num)
+    {
+        if (num != 0)
+        {
+            return (num % 10 + sum(num / 10));
+        }
+        else
+        {
+            return 0;
+        }
+    }
 }
-
-Console.WriteLine($"the total of the individual digits is : {Sum}");
