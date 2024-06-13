@@ -1,26 +1,21 @@
-﻿// C# program to get a number and tell if it is a palindrome or not
-
-int num, temp, reverse = 0, remainder;
-Console.WriteLine("Enter a number : ");
-num = int.Parse(Console.ReadLine());
-temp = num;
-
-while (num > 0)
+﻿int b1, b2;
+int i = 0, rem = 0;
+int[] sum = new int[20];
+Console.WriteLine("Enter the first binary number: ");
+b1 = int.Parse(Console.ReadLine());
+Console.WriteLine("Enter the second binary number: ");
+b2 = int.Parse(Console.ReadLine());
+while (b1 != 0 || b2 != 0)
 {
-    remainder = num % 10;
-    reverse = (reverse * 10) + remainder;
-    num = num / 10;
+    sum[i++] = (b1 % 10 + b2 % 10 + rem) % 2;
+    rem = (b1 % 10 + b2 % 10 + rem) / 2;
+    b1 = b1 / 10;
+    b2 = b2 / 10;
 }
-
-Console.WriteLine($"the number you entered is {temp}");
-Console.WriteLine($"the reverse is {reverse}");
-
-if (temp == reverse)
-{
-    Console.WriteLine("the number you entered is a palindrome");
-}
-else
-{
-    Console.WriteLine("the number you entered is not a palindrome");
-}
+if (rem != 0)
+    sum[i++] = rem;
+--i;
+Console.WriteLine("Sum of two binary numbers: ");
+while (i >= 0)
+    Console.Write("{0}", sum[i--]);
 Console.ReadLine();
