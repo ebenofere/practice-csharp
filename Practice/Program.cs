@@ -1,15 +1,13 @@
-﻿/// C# program to check whether a given number is even or odd
+﻿// C# program to calculate the power exponent value 
 
-int a;
-Console.WriteLine("enter the number : ");
-a = int.Parse(Console.ReadLine());
-if (a % 2 == 0)
+IEnumerable<int> oddNums = Enumerable.Range(20, 30).Where(x => x % 2 != 0);
+foreach(int n in oddNums)
 {
-    Console.WriteLine("this number is even");
-    Console.Read();
+    Console.WriteLine($"let's go : {n}");
+    Console.ReadLine();
 }
-else
-{
-    Console.WriteLine("this number is odd");
-    Console.Read();
-}
+
+
+
+
+
