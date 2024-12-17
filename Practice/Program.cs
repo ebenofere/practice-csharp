@@ -3,11 +3,7 @@
 IEnumerable<int> oddNums = Enumerable.Range(20, 30).Where(x => x % 2 != 0);
 foreach(int n in oddNums)
 {
-    Console.WriteLine($"let's go : {n}");
+    Console.WriteLine(n);
     Console.ReadLine();
 }
-
-
-
-
 
