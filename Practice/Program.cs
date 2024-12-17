@@ -1,5 +1,15 @@
-﻿IEnumerable<int> GenerateNumber = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8 };
+﻿/// C# program to check whether a given number is even or odd
 
-foreach (int item in GenerateNumber) {
-Console.WriteLine(item);
+int a;
+Console.WriteLine("enter the number : ");
+a = int.Parse(Console.ReadLine());
+if (a % 2 == 0)
+{
+    Console.WriteLine("this number is even");
+    Console.Read();
+}
+else
+{
+    Console.WriteLine("this number is odd");
+    Console.Read();
 }
